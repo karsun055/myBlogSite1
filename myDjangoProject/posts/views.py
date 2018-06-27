@@ -8,7 +8,7 @@ def index(request):
     posts = Posts.objects.all()[:10]
     
     context = {
-        'title':'Latest Posts',
+        'title':'New Posts',
         'posts':posts
         }
     return render(request, 'posts/index.html', context)
